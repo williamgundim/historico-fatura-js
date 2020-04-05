@@ -55,7 +55,7 @@ function SumValues(aValores) {
         let sum = 0;
         aValores.map((item) => {
             if (item.month === nX) {
-                sum += parseFloat(item.value.replace(',', '.'))
+                sum += parseFloat(item.value.replace('.', ''))
             }
         })
         if (sum > 0) {
